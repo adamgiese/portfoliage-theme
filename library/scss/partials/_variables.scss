@@ -1,0 +1,145 @@
+/******************************************************************
+Stylesheet: Variables
+******************************************************************/
+
+/*********************
+COLORS
+*********************/
+//color definition
+
+$red-color:         #b43144;
+$orange-color:      #ed733f;
+$yellow-color:      #f4e022;
+$green-color:       #67ba6d;
+$blue-color:        #8aacff;
+$purple-color:      #6151bb;
+$white-color:       white;
+$black-color:       black;
+$gray-color:        gray;
+
+//brand colors
+$facebook-blue:     #3b5998;
+$twitter-blue:      #00a0d1; 
+
+$site-primary-color:          $blue-color;
+$site-accent-color:           $red-color; 
+
+//site colors
+$site-bg-color:               $white-color;
+$site-text-color:             $black-color;
+$site-border-color:           $gray-color;
+$site-link-color:             $site-accent-color;
+$site-link-color-on-hover:    darken($site-link-color, 10%);
+
+//layout colors
+$header-bg-color:               $site-bg-color;
+$header-border-color:           $site-border-color;
+$header-text-color:             $site-text-color;
+$header-link-color:             $site-link-color;
+$header-link-color-on-hover:    darken($header-link-color, 10%);
+
+
+$content-bg-color:               $site-bg-color;
+$content-border-color:           $site-border-color;
+$content-text-color:             $site-text-color;
+$content-link-color:             $site-link-color;
+$content-link-color-on-hover:    darken($content-link-color, 10%);
+
+$sidebar-bg-color:               $content-bg-color;
+$sidebar-border-color:           $content-border-color;
+$sidebar-text-color:             $content-text-color;
+$sidebar-link-color:             $content-link-color;
+$sidebar-link-color-on-hover:    darken($sidebar-link-color, 10%);
+
+
+$footer-bg-color:               $site-bg-color;
+$footer-border-color:           $site-border-color;
+$footer-text-color:             $site-text-color;
+$footer-link-color:             $site-link-color;
+$footer-link-color-on-hover:    darken($footer-link-color, 10%);
+
+/*********************
+BOX MODEL SIZE
+*********************/
+$site-padding-size:      24px;
+$site-border-size:       1px;
+$site-margin-size:       .75em;
+
+$header-padding-size:    $site-padding-size;
+$header-border-size:     $site-border-size;
+$header-margin-size:     $site-margin-size;
+
+$content-padding-size:   12px;
+$content-border-size:    $site-border-size;
+$content-margin-size:    $site-margin-size;
+
+$sidebar-padding-size:   $content-padding-size;
+$sidebar-border-size:    $content-border-size;
+$sidebar-margin-size:    $content-margin-size;
+
+$footer-padding-size:    $site-padding-size;
+$footer-border-size:     $site-border-size;
+$footer-margin-size:     $site-margin-size;
+
+//bones default variables --- being phased out
+
+$black:             #323944;
+$white:             #fff;
+
+$light-gray:        #f8f9fa;
+$gray:              #eaedf2;
+$text-color:        #5c6b80;
+$meta-gray:         #9fa6b4;
+
+$tan:               #eceee5;
+
+$green:             #7dd667;
+
+$blue:              #2980b9;
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
+
+$nav-link-bg:       $black;
+$link-color:        #999;
+$link-hover:        darken($link-color, 9%);
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+/*********************
+FONTS
+*********************/
+
+//font-families
+$sans-serif:        "PT Sans", Helvetica, Arial, sans-serif;
+$serif:             "PT Serif", Cambria, Times New Roman, Times, serif;
+$lato:              'Lato', $sans-serif;
+$header-default-font: $serif;
+
+$default-title-font:        $serif;
+$default-text-font:         $sans-serif;
+
+$header-title-font:         $default-title-font;
+$header-text-font:          $default-text-font;
+
+$content-title-font:        $default-title-font;
+$content-text-font:         $default-text-font;
+
+$sidebar-title-font:        $default-title-font;
+$sidebar-text-font:         $default-text-font;
+
+$footer-title-font:         $default-title-font;
+$footer-text-font:          $default-text-font;
+
+//font-sizes
+$mobile-nav-font-size: 16px;
+
+//misc. 
+
+/*********************
+TRANSITIONS
+*********************/
+$default-timing: .5s;
+$hover-out-to-in: $default-timing left ease-in-out, $default-timing right ease-in-out;
