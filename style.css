@@ -1,15 +1,15 @@
-/******************************************************************
-Theme Name: Skeleton
+/*
+Theme Name: Portfoliage
 Theme URI: http://www.adamgiese.com
-Description: Skeleton started theme, based on the Bones theme by Eddie Machado
+Description: Portfoliage is a theme designed to show off the portfolio of a web designer and/or developer.
 Author: Adam Giese
 Author URI: http://www.adamgiese.com
-Version: 1.7
+Version: 1.
 Tags: fluid-layout, responsive-layout, accessibility-ready, translation-ready, microformats, rtl-language-support
-License: WTFPL
-License URI: http://sam.zoy.org/wtfpl/
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-.sticky {}          /* DO NOT EDIT THIS */
-.gallery-caption {} /* THESE ARE USELESS */
-.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+.sticky {}          
+.gallery-caption {} 
+.bypostauthor {}    
