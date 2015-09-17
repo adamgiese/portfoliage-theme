@@ -20,6 +20,13 @@
     <meta name="theme-color" content="#121212">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<?php wp_head(); ?>
+        <style>
+          @media only screen and (min-width: 768px) {
+            .header {
+                background-image: url('<?php echo esc_url(get_theme_mod('skeleton_title_background')); ?>');
+            }
+          }
+        </style>
 	</head>
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 		<div id="container">
