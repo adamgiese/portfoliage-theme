@@ -603,7 +603,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
   font-size: 0.9em;
@@ -685,7 +685,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Ubuntu", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -931,9 +931,8 @@ Stylesheet: Base Mobile Stylesheet
 GENERAL STYLES
 *********************/
 body {
-  font-family: "PT Serif", Cambria, Times New Roman, Times, serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-size: 100%;
-  padding: 24px;
   line-height: 1.5;
   color: black;
   background-color: white;
@@ -997,7 +996,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
-  font-family: "PT Serif", Cambria, Times New Roman, Times, serif; }
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif; }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
@@ -1028,32 +1027,61 @@ HEADER STYLES
 *********************/
 .header {
   background-color: white;
-  padding: 24px;
-  border: 1px solid gray; }
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+  padding: 12px; }
 
 #logo {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  float: left;
+  width: 70%;
+  padding: 12px; }
   #logo a {
-    color: #b43144; }
+    color: #b5b5b5;
+    font-size: 24px;
+    font-weight: 700; }
+
+#site-tagline {
+  color: #b5b5b5; }
+
+#site-description {
+  color: #b5b5b5; }
+
+.menu-toggle {
+  float: left;
+  width: 30%;
+  background: transparent;
+  border: none;
+  margin-top: 12px;
+  font-family: "PT Sans";
+  text-transform: uppercase; }
+  .menu-toggle svg {
+    width: 40px;
+    height: 40px; }
 
 /*********************
 NAVIGATION STYLES
 *********************/
 .nav {
   border-bottom: 0;
+  clear: both;
+  max-height: 0;
   margin: 0;
   text-align: center;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 18px;
+  overflow: hidden;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
+  .nav.active {
+    max-height: 1400px; }
   .nav li a {
     display: block;
-    color: #b43144;
+    color: #b5b5b5;
     text-decoration: none;
     padding: 0.75em; }
   .nav li ul.sub-menu li a,
@@ -1068,12 +1096,12 @@ POSTS & CONTENT STYLES
   margin-top: 0.75em; }
 
 .article-header {
-  border: 1px solid gray;
+  border: 1px solid #b5b5b5;
   padding: 12px;
   margin-bottom: 0.75em; }
 
 .carousel-container {
-  border: 1px solid gray;
+  border: 1px solid #b5b5b5;
   padding: 12px 12px 0 12px;
   margin-bottom: 0.75em; }
   .carousel-container .flexslider {
@@ -1106,7 +1134,7 @@ POSTS & CONTENT STYLES
 /* end .hentry */
 .article-footer {
   padding: 12px;
-  border: 1px solid gray;
+  border: 1px solid #b5b5b5;
   margin-top: 0.75em; }
   .article-footer p {
     margin: 0; }
@@ -1126,12 +1154,12 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
   padding: 12px 12px 0;
-  border: 1px solid gray; }
+  border: 1px solid #b5b5b5; }
   .entry-content p {
     margin: 0 0 1.5em; }
   .entry-content table {
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid #b5b5b5;
     margin-bottom: 0.75em; }
     .entry-content table caption {
       margin: 0 0 7px;
@@ -1140,18 +1168,18 @@ POSTS & CONTENT STYLES
       text-transform: uppercase;
       letter-spacing: 1px; }
   .entry-content tr {
-    border-bottom: 1px solid gray; }
+    border-bottom: 1px solid #b5b5b5; }
     .entry-content tr:nth-child(even) {
       background-color: #f8f9fa; }
   .entry-content td {
     padding: 7px;
-    border-right: 1px solid gray; }
+    border-right: 1px solid #b5b5b5; }
     .entry-content td:last-child {
       border-right: 0; }
   .entry-content th {
     background-color: #f8f9fa;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray; }
+    border-bottom: 1px solid #b5b5b5;
+    border-right: 1px solid #b5b5b5; }
     .entry-content th:last-child {
       border-right: 0; }
   .entry-content blockquote {
@@ -1277,7 +1305,7 @@ COMMENT STYLES
   clear: both;
   overflow: hidden;
   padding: 12px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #b5b5b5;
   /* vcard */
   /* end .commentlist .vcard */
   /* end children */
@@ -1349,7 +1377,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 .comment-respond {
   padding: 1.5em;
-  border: 1px solid gray;
+  border: 1px solid #b5b5b5;
   margin-top: 0.75em;
   text-align: center; }
 
@@ -1397,7 +1425,7 @@ SIDEBARS & ASIDES
   background-color: white;
   padding: 12px;
   text-align: center;
-  border: 1px solid gray;
+  border: 1px solid #b5b5b5;
   margin-bottom: 0.75em; }
 
 /*********************
@@ -1407,7 +1435,7 @@ FOOTER STYLES
   clear: both;
   background-color: white;
   color: black;
-  border: 1px solid gray; }
+  border: 1px solid #b5b5b5; }
 
 /* end .footer-links */
 .copyright {
@@ -1424,19 +1452,64 @@ FOOTER STYLES
   GENERAL STYLES
   *********************/
   /*********************
-  LAYOUT & GRID STYLES
-  *********************/
-  .wrap {
-    width: 760px; }
-
-  /*********************
   HEADER STYLES
   *********************/
+  .header {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    background-size: 100% auto;
+    height: 400px; }
+    .header:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .header #site-info {
+      width: 40.67797%;
+      float: left;
+      margin-right: 1.69492%; }
+
+  #inner-header {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
+    #inner-header:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+  .menu-toggle {
+    display: none; }
+
+  #logo {
+    width: auto;
+    max-width: 100%;
+    float: none;
+    text-align: left;
+    margin-top: 24px;
+    padding: 0 24px; }
+    #logo a {
+      font-size: 36px; }
+
+  #site-tagline {
+    padding: 0 24px;
+    font-size: 22px;
+    font-weight: 700; }
+
+  #site-description {
+    padding: 0 24px;
+    font-size: 18px;
+    font-weight: 700; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
   nav {
-    text-align: center; }
+    text-align: center;
+    width: 57.62712%;
+    float: right;
+    margin-right: 0; }
     nav:after {
       content: '';
       width: 100%;
@@ -1444,6 +1517,7 @@ FOOTER STYLES
       clear: both; }
 
   .nav {
+    max-height: none;
     border: 0;
     /* end .menu ul li */
     /* end current highlighters */ }
@@ -1462,7 +1536,7 @@ FOOTER STYLES
         width: 0;
         right: 50%;
         height: 2px;
-        background: #8c2635;
+        background: #9c9c9c;
         transition: 0.5s left ease-in-out, 0.5s right ease-in-out; }
       .nav li:hover:after {
         left: .75em;
@@ -1471,7 +1545,7 @@ FOOTER STYLES
       .nav li a {
         border-bottom: 0; }
         .nav li a:hover, .nav li a:focus {
-          color: #8c2635; }
+          color: #9c9c9c; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
@@ -1503,7 +1577,7 @@ FOOTER STYLES
   CONTENT
   *********************/
   #inner-content {
-    max-width: 100%;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto; }
     #inner-content:after {
@@ -1574,29 +1648,9 @@ FOOTER STYLES
   /*********************
   HEADER STYLES
   *********************/
-  #inner-header {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-    #inner-header:after {
-      content: " ";
-      display: block;
-      clear: both; }
-
-  #logo {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%; }
-
   /*********************
   NAVIGATION STYLES
   *********************/
-  nav {
-    width: 66.10169%;
-    float: right;
-    margin-right: 0;
-    line-height: 53px; }
-
   .nav li {
     display: block;
     float: right; }

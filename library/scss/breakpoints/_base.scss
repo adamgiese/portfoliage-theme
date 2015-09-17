@@ -9,7 +9,6 @@ GENERAL STYLES
 body {
 	font-family: $default-title-font;
 	font-size: 100%;
-  padding: $site-padding-size;
 	line-height: 1.5;
 	color: $site-text-color;
 	background-color: $site-bg-color;
@@ -126,9 +125,10 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $header-bg-color;
-  padding: $header-padding-size;
-  border: $header-border-size solid $header-border-color;
+  background-color: $header-bg-color;
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+  padding: $header-padding-size / 2;
 }
 
 #inner-header {
@@ -137,9 +137,34 @@ HEADER STYLES
 #logo {
   margin: 0 auto;
   text-align: center;
+  float: left;
+  width: 70%;
+  padding: $header-padding-size / 2;
 
   a {
     color: $header-link-color;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+#site-tagline {
+  color: $header-link-color;
+}
+#site-description {
+  color: $header-link-color;
+}
+.menu-toggle {
+  float: left;
+  width: 30%;
+  background: transparent;
+  border: none;
+  margin-top: 12px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+
+  svg {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -147,15 +172,21 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
-
 .nav {
 	border-bottom: 0;
+  clear: both;
+  max-height: 0;
 	margin: 0;
   text-align: center;
   font-family: $sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 18px;
+  overflow: hidden;
+
+  &.active {
+    max-height: 1400px;
+  }
 
 
 	li {

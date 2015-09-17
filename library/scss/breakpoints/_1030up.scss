@@ -6,21 +6,10 @@ Stylesheet: Desktop Stylsheet
 HEADER STYLES
 *********************/
 
-#inner-header {
-  @include container;
-}
-#logo {
-  @include span(4);
-}
-
 /*********************
 NAVIGATION STYLES
 *********************/
 
-nav {
-  @include span(8 last);
-  line-height: 53px;
-}
 .nav {
   li {
     display: block;

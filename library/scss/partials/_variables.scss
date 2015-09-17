@@ -15,7 +15,7 @@ $blue-color:        #8aacff;
 $purple-color:      #6151bb;
 $white-color:       white;
 $black-color:       black;
-$gray-color:        gray;
+$gray-color:        #b5b5b5;
 
 //brand colors
 $facebook-blue:     #3b5998;
@@ -34,8 +34,8 @@ $site-link-color-on-hover:    darken($site-link-color, 10%);
 //layout colors
 $header-bg-color:               $site-bg-color;
 $header-border-color:           $site-border-color;
-$header-text-color:             $site-text-color;
-$header-link-color:             $site-link-color;
+$header-text-color:             $gray-color;
+$header-link-color:             $gray-color;
 $header-link-color-on-hover:    darken($header-link-color, 10%);
 
 
@@ -113,12 +113,12 @@ FONTS
 *********************/
 
 //font-families
-$sans-serif:        "PT Sans", Helvetica, Arial, sans-serif;
+$sans-serif:        "Ubuntu", Helvetica, Arial, sans-serif;
 $serif:             "PT Serif", Cambria, Times New Roman, Times, serif;
 $lato:              'Lato', $sans-serif;
 $header-default-font: $serif;
 
-$default-title-font:        $serif;
+$default-title-font:        $sans-serif;
 $default-text-font:         $sans-serif;
 
 $header-title-font:         $default-title-font;

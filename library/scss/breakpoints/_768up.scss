@@ -7,26 +7,54 @@ Stylesheet: Tablet & Small Desktop Stylesheet
 GENERAL STYLES
 *********************/
 
-body {}
-
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-
-.wrap {
-	width: 760px;
+body {
 }
 
 /*********************
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+  @include container();
+  padding: $header-padding-size;
+  background-size: 100% auto;
+  height: 400px;
+
+  #site-info {
+    @include span(5);
+  }
+}
 
 #inner-header {
+  @include container();
 }
+
+.menu-toggle {
+  display: none;
+}
+
 #logo {
+  width: auto;
+  max-width: 100%;
+  float: none;
+  text-align: left;
+  margin-top: 24px;
+  padding: 0 $header-padding-size;
+  a {
+    font-size: 36px;
+  }
 }
+#site-tagline {
+  padding: 0 $header-padding-size;
+  font-size: 22px;
+  font-weight: 700;
+}
+#site-description {
+  padding: 0 $header-padding-size;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 
 /*********************
 NAVIGATION STYLES
@@ -34,6 +62,7 @@ NAVIGATION STYLES
 
 nav {
   text-align: center;
+  @include span(7 last);
 
   &:after {
     content: '';
@@ -43,6 +72,7 @@ nav {
   }
 }
 .nav {
+  max-height: none;
 	border: 0;
 	ul {
 		background:$black;
