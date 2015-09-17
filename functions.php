@@ -37,7 +37,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 function skeleton_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=PT+Sans:300,400,700,400italic,700italic|PT+Serif:300,400,700');
+  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=PT+Serif:300,400,700|Ubuntu:300,400,700');
 }
 
 add_action('wp_enqueue_scripts', 'skeleton_fonts');
