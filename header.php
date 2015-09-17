@@ -25,20 +25,34 @@
 		<div id="container">
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div id="inner-header">
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+          <div id="site-info">
+            <p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+              <a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+            </p>
+            <p id="site-tagline">
+              <?php echo get_bloginfo ( 'description' ); ?>
+            </p>
+            <p id="site-description">
+              <?php echo get_theme_mod('portfoliage_header_paragraph'); ?>
+            </p>
+            <button class="menu-toggle">
+              Menu
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M10 12h30v4H10z"/><path d="M10 22h30v4H10z"/><path d="M10 32h30v4H10z"/></svg>
+            </button>
+          </div>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
-    					         'container' => false,                           // remove nav container
-    					         'container_class' => 'menu',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'skeletontheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-    					         'before' => '',                                 // before the menu
-        			               'after' => '',                                  // after the menu
-        			               'link_before' => '',                            // before each link
-        			               'link_after' => '',                             // after each link
-        			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
+             'container' => false,                         
+             'container_class' => 'menu',                 
+             'menu' => __( 'The Main Menu', 'skeletontheme' ),  
+             'menu_class' => 'nav top-nav',               
+             'theme_location' => 'main-nav',                 
+             'before' => '',                                 
+               'after' => '',                                  
+               'link_before' => '',                            
+               'link_after' => '',                             
+               'depth' => 0,                                   
+             'fallback_cb' => ''                             
 						)); ?>
 					</nav>
 				</div>
