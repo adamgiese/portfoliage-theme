@@ -19,6 +19,17 @@ function skeleton_theme_customizer($wp_customize) {
     'section'     => 'title_tagline',
     'type'        => 'textarea'
   )));
+  $wp_customize->add_setting('portfoliage_header_cta');
+  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'portfoliage_header_cta', array(
+    'label'       => __( 'CTA Text', 'skeleton'),
+    'section'     => 'title_tagline',
+  )));
+  $wp_customize->add_setting('portfoliage_header_cta_href');
+  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'portfoliage_header_cta_href', array(
+    'label'       => __( 'CTA Location', 'skeleton'),
+    'section'     => 'title_tagline',
+    'description' => 'If the link destination if absolute, include the http:// or https:// protocol.'
+  )));
   $wp_customize->add_setting('skeleton_logo');
   $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'skeleton_logo', array(
     'label'       => __( 'Logo', 'skeleton' ),

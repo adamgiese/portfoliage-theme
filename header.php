@@ -42,6 +42,13 @@
             <p id="site-description">
               <?php echo get_theme_mod('portfoliage_header_paragraph'); ?>
             </p>
+            <?php
+              $header_cta = get_theme_mod('portfoliage_header_cta');
+              $header_cta_href = get_theme_mod('portfoliage_header_cta_href');
+              if (! empty($header_cta) && !empty($header_cta_href)) {
+                echo "<a class='cta' href='$header_cta_href'>$header_cta</a>";
+              }
+            ?>
             <button class="menu-toggle">
               Menu
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M10 12h30v4H10z"/><path d="M10 22h30v4H10z"/><path d="M10 32h30v4H10z"/></svg>
