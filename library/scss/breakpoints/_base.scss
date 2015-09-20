@@ -175,6 +175,7 @@ HEADER STYLES
   margin: 0 auto;
   font-family: $sans-serif;
   text-transform: uppercase;
+  outline: none;
 
   svg {
     width: 40px;
@@ -199,9 +200,11 @@ NAVIGATION STYLES
   letter-spacing: 2px;
   font-size: 18px;
   overflow: hidden;
+  transition: .5s max-height ease;
 
   &.active {
-    max-height: 1400px;
+    max-height: 1500px;
+    transition: .5s max-height ease;
   }
 
 

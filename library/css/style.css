@@ -1069,7 +1069,8 @@ HEADER STYLES
   display: block;
   margin: 0 auto;
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  outline: none; }
   .menu-toggle svg {
     width: 40px;
     height: 40px;
@@ -1090,11 +1091,13 @@ NAVIGATION STYLES
   letter-spacing: 2px;
   font-size: 18px;
   overflow: hidden;
+  transition: .5s max-height ease;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
   .nav.active {
-    max-height: 1400px; }
+    max-height: 1500px;
+    transition: .5s max-height ease; }
   .nav li a {
     display: block;
     color: #b5b5b5;
