@@ -1049,8 +1049,9 @@ HEADER STYLES
   color: #b5b5b5;
   margin: 4px auto; }
 
-.cta {
+.cta, .cta:visited, .cta:visited:hover, .cta:link {
   background-color: #b43144;
+  border: 1px solid #b43144;
   border-radius: .4em;
   color: #b5b5b5;
   font-weight: 700;
@@ -1523,10 +1524,14 @@ FOOTER STYLES
     font-size: 18px;
     font-weight: 700; }
 
-  .cta {
+  .cta, .cta:visited, .cta:visited:hover, .cta:link {
     display: block;
     margin: 24px;
-    width: 10em; }
+    width: 10em;
+    transition: .4s background-color ease; }
+    .cta:hover, .cta:visited:hover, .cta:visited:hover:hover, .cta:link:hover {
+      background-color: transparent;
+      transition: .4s background-color ease; }
 
   /*********************
   NAVIGATION STYLES

@@ -154,8 +154,9 @@ HEADER STYLES
   color: $header-link-color;
   margin: 4px auto;
 }
-.cta {
+.cta, .cta:visited, .cta:visited:hover, .cta:link {
   background-color: $site-accent-color;
+  border: 1px solid $site-accent-color;
   border-radius: .4em;
   color: $header-link-color;
   font-weight: 700;

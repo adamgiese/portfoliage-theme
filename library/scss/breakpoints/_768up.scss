@@ -56,10 +56,16 @@ HEADER STYLES
   font-size: 18px;
   font-weight: 700;
 }
-.cta {
+.cta, .cta:visited, .cta:visited:hover, .cta:link {
   display: block;
   margin: $header-padding-size;
   width: 10em;
+  transition: .4s background-color ease;
+
+  &:hover {
+    background-color: transparent;
+    transition: .4s background-color ease;
+  }
 }
 
 
