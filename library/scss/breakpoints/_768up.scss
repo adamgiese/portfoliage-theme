@@ -48,6 +48,8 @@ HEADER STYLES
   padding: 0 $header-padding-size;
   font-size: 22px;
   font-weight: 700;
+  text-align: left;
+  margin: 12px auto;
 }
 #site-description {
   padding: 0 $header-padding-size;
@@ -55,7 +57,9 @@ HEADER STYLES
   font-weight: 700;
 }
 .cta {
-  display: inline;
+  display: block;
+  margin: $header-padding-size;
+  width: 10em;
 }
 
 

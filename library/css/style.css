@@ -1511,7 +1511,9 @@ FOOTER STYLES
   #site-tagline {
     padding: 0 24px;
     font-size: 22px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-align: left;
+    margin: 12px auto; }
 
   #site-description {
     padding: 0 24px;
@@ -1519,7 +1521,9 @@ FOOTER STYLES
     font-weight: 700; }
 
   .cta {
-    display: inline; }
+    display: block;
+    margin: 24px;
+    width: 10em; }
 
   /*********************
   NAVIGATION STYLES
