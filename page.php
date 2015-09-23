@@ -10,7 +10,9 @@
             <div class="carousel-container">
             <?php
               $page_carousel = get_post_meta(get_the_id(), 'aeg_page_carousel', true);
-              echo do_shortcode('[print_carousel carousel="' . $page_carousel . '"]');
+              if ( !empty($page_carousel) && $page_carousel !== "none" ) {
+                echo do_shortcode('[print_carousel carousel="' . $page_carousel . '"]');
+              }
             ?>
             </div>
 						<main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
