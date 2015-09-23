@@ -8,6 +8,7 @@ require_once( 'library/admin.php' );
 
 function launch_skeleton() {
   require_once( 'library/post-types/carousel/carousel.php' );
+  require_once( 'library/post-types/skills/skills.php' );
   require_once( 'library/customizer.php' );
   require_once( 'library/sidebars.php' );
   require_once( 'library/comments-layout.php' );
