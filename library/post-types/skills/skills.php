@@ -33,4 +33,22 @@ function skeleton_skill_registration() {
 		)
 	); 
 }
+
+//add extra associated images
+if (class_exists('MultiPostThumbnails')) {
+  new MultiPostThumbnails(
+    array(
+      'label' => 'Skill Icon',
+      'id' => 'skill-icon-image',
+      'post_type' => 'skeleton_skill'
+    )
+  );
+  new MultiPostThumbnails(
+    array(
+      'label' => 'Skill Background',
+      'id' => 'skill-background',
+      'post_type' => 'skeleton_skill'
+    )
+  );
+}
 ?>
