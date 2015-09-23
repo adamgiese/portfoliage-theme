@@ -252,7 +252,6 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: $content-margin-size;
 }
 
 .article-header {
@@ -262,9 +261,8 @@ POSTS & CONTENT STYLES
 }
 
 .carousel-container {
-  border: $content-border-size solid $content-border-color;
-  padding: $content-padding-size $content-padding-size 0 $content-padding-size;
-  margin-bottom: $content-margin-size;
+  position: relative;
+  margin: $content-margin-size;
 
   .flexslider {
     border: none;
@@ -285,11 +283,21 @@ POSTS & CONTENT STYLES
   }
 
   .navigation {
+    height: 46px;
+    position: absolute;
+    top: 50%; //fallback
+    top: calc(50% - 23px);
+    width: 100%;
+
     .prev {
-      float: left;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
     }
     .next {
-      float: right;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
     }
     svg {
       width: 40px;
@@ -353,8 +361,7 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: $content-padding-size $content-padding-size 0; //no bottom padding
-  border: $content-border-size solid $content-border-color;
+  padding: $content-padding-size; 
 
   p {
     margin: 0 0 1.5em;
@@ -524,6 +531,12 @@ POSTS & CONTENT STYLES
   margin: 0;
 }
 
+/*****************************************************************
+TEMPLATES
+******************************************************************/
+.page-template-page-full-width {
+}
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -605,7 +618,6 @@ COMMENT STYLES
 #comments-title {
 	padding: 0.75em;
 	margin: 0;
-	border-top: 1px solid $light-gray;
 
 	/* number of comments span */
 	span {}
@@ -789,8 +801,6 @@ COMMENT FORM STYLES
 .comment-respond {
 	@extend .cf;
 	padding: 1.5em;
-  border: $content-border-size solid $content-border-color;
-  margin-top: $content-margin-size;
   text-align: center;
 }
 

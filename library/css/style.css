@@ -1112,18 +1112,14 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content {
-  margin-top: 0.75em; }
-
 .article-header {
   border: 1px solid #b5b5b5;
-  padding: 12px;
-  margin-bottom: 0.75em; }
+  padding: 24px;
+  margin-bottom: 24px; }
 
 .carousel-container {
-  border: 1px solid #b5b5b5;
-  padding: 12px 12px 0 12px;
-  margin-bottom: 0.75em; }
+  position: relative;
+  margin: 24px; }
   .carousel-container .flexslider {
     border: none;
     margin-bottom: 0; }
@@ -1135,27 +1131,37 @@ POSTS & CONTENT STYLES
     display: none; }
   .carousel-container .flex-control-nav {
     display: none; }
-  .carousel-container .navigation .prev {
-    float: left; }
-  .carousel-container .navigation .next {
-    float: right; }
-  .carousel-container .navigation svg {
-    width: 40px;
-    height: 40px; }
-  .carousel-container .navigation:after {
-    content: '';
-    display: block;
-    clear: both; }
+  .carousel-container .navigation {
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    top: calc(50% - 23px);
+    width: 100%; }
+    .carousel-container .navigation .prev {
+      cursor: pointer;
+      left: 0;
+      position: absolute; }
+    .carousel-container .navigation .next {
+      cursor: pointer;
+      position: absolute;
+      right: 0; }
+    .carousel-container .navigation svg {
+      width: 40px;
+      height: 40px; }
+    .carousel-container .navigation:after {
+      content: '';
+      display: block;
+      clear: both; }
 
 .hentry {
   background-color: white;
-  margin-bottom: 0.75em; }
+  margin-bottom: 24px; }
 
 /* end .hentry */
 .article-footer {
-  padding: 12px;
+  padding: 24px;
   border: 1px solid #b5b5b5;
-  margin-top: 0.75em; }
+  margin-top: 24px; }
   .article-footer p {
     margin: 0; }
 
@@ -1173,14 +1179,13 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: 12px 12px 0;
-  border: 1px solid #b5b5b5; }
+  padding: 24px; }
   .entry-content p {
     margin: 0 0 1.5em; }
   .entry-content table {
     width: 100%;
     border: 1px solid #b5b5b5;
-    margin-bottom: 0.75em; }
+    margin-bottom: 24px; }
     .entry-content table caption {
       margin: 0 0 7px;
       font-size: 0.75em;
@@ -1254,6 +1259,9 @@ POSTS & CONTENT STYLES
 .tags {
   margin: 0; }
 
+/*****************************************************************
+TEMPLATES
+******************************************************************/
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -1313,7 +1321,6 @@ COMMENT STYLES
 #comments-title {
   padding: 0.75em;
   margin: 0;
-  border-top: 1px solid #f8f9fa;
   /* number of comments span */ }
 
 .commentlist {
@@ -1324,7 +1331,7 @@ COMMENT STYLES
   position: relative;
   clear: both;
   overflow: hidden;
-  padding: 12px;
+  padding: 24px;
   border-bottom: 1px solid #b5b5b5;
   /* vcard */
   /* end .commentlist .vcard */
@@ -1397,8 +1404,6 @@ COMMENT FORM STYLES
 ******************************************************************/
 .comment-respond {
   padding: 1.5em;
-  border: 1px solid #b5b5b5;
-  margin-top: 0.75em;
   text-align: center; }
 
 #reply-title {
@@ -1443,10 +1448,10 @@ SIDEBARS & ASIDES
 *********************/
 .sidebar {
   background-color: white;
-  padding: 12px;
+  padding: 24px;
   text-align: center;
   border: 1px solid #b5b5b5;
-  margin-bottom: 0.75em; }
+  margin-bottom: 24px; }
 
 /*********************
 FOOTER STYLES
@@ -1630,6 +1635,11 @@ FOOTER STYLES
   TEMPLATES
   *********************/
   .error404 #main {
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+
+  .page-template-page-full-width #main {
     width: 100%;
     float: right;
     margin-right: 0; }

@@ -205,6 +205,12 @@ TEMPLATES
   @include span(12 last);
 }
 
+.page-template-page-full-width {
+  #main {
+    @include span(12 last);
+  }
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
