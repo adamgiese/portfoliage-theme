@@ -211,6 +211,28 @@ TEMPLATES
   }
 }
 
+/*****************************************************************
+SHORTCODE
+******************************************************************/
+.skill-container {
+  max-height: 400px;
+  height: 28.5vw;
+  background-size: 100%;
+  .skill-content {
+    bottom: 36px;
+    position: absolute;
+    top: 36px;
+    width: 500px;
+
+    &.left {
+      left: 36px;
+    }
+    &.right {
+      right: 36px;
+    }
+  }
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
@@ -344,6 +366,9 @@ COMMENT FORM STYLES
 FOOTER STYLES
 *********************/
 
+.footer {
+  @include container();
+}
 .footer-links {
 	ul {
 		li {

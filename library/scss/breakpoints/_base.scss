@@ -364,7 +364,7 @@ POSTS & CONTENT STYLES
   padding: $content-padding-size; 
 
   p {
-    margin: 0 0 1.5em;
+    margin: 0 0 .75em;
   }
 
 
@@ -535,6 +535,41 @@ POSTS & CONTENT STYLES
 TEMPLATES
 ******************************************************************/
 .page-template-page-full-width {
+  .entry-content {
+    padding: 0;
+  }
+}
+
+/*****************************************************************
+SHORTCODE
+******************************************************************/
+.skill-title {
+  text-transform: lowercase;
+  font-size: 42px;
+  font-weight: 700;
+  margin: .3em;
+  text-align: center;
+  color: $gray-color;
+}
+.skill-container {
+  position: relative;
+
+  .skill-content {
+    background: black; //fallback
+    background: rgba(0,0,0,.7);
+    padding: 12px;
+  }
+  h4 {
+    border-bottom: 1px solid $site-accent-color;
+    color: $site-accent-color;
+    letter-spacing: 1px;
+    margin: 0 0 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .description {
+    color: $gray-color;
+  }
 }
 
 /******************************************************************
@@ -890,9 +925,10 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $footer-bg-color;
 	color: $footer-text-color;
-  border: $footer-border-size solid $footer-border-color;
+  #inner-footer {
+    background-color: $footer-bg-color;
+  }
 }
 
 .footer-links {
@@ -906,4 +942,5 @@ FOOTER STYLES
   width: 100%;
   margin: 0;
   padding: 16px 8px;
+  color: $site-accent-color;
 }

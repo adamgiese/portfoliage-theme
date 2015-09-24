@@ -1181,7 +1181,7 @@ POSTS & CONTENT STYLES
 .entry-content {
   padding: 24px; }
   .entry-content p {
-    margin: 0 0 1.5em; }
+    margin: 0 0 .75em; }
   .entry-content table {
     width: 100%;
     border: 1px solid #b5b5b5;
@@ -1262,6 +1262,36 @@ POSTS & CONTENT STYLES
 /*****************************************************************
 TEMPLATES
 ******************************************************************/
+.page-template-page-full-width .entry-content {
+  padding: 0; }
+
+/*****************************************************************
+SHORTCODE
+******************************************************************/
+.skill-title {
+  text-transform: lowercase;
+  font-size: 42px;
+  font-weight: 700;
+  margin: .3em;
+  text-align: center;
+  color: #b5b5b5; }
+
+.skill-container {
+  position: relative; }
+  .skill-container .skill-content {
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px; }
+  .skill-container h4 {
+    border-bottom: 1px solid #b43144;
+    color: #b43144;
+    letter-spacing: 1px;
+    margin: 0 0 12px;
+    text-align: center;
+    text-transform: uppercase; }
+  .skill-container .description {
+    color: #b5b5b5; }
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -1458,16 +1488,17 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: white;
-  color: black;
-  border: 1px solid #b5b5b5; }
+  color: black; }
+  .footer #inner-footer {
+    background-color: #3e3e3e; }
 
 /* end .footer-links */
 .copyright {
   text-align: center;
   width: 100%;
   margin: 0;
-  padding: 16px 8px; }
+  padding: 16px 8px;
+  color: #b43144; }
 
 @media only screen and (min-width: 768px) {
   /******************************************************************
@@ -1644,6 +1675,23 @@ FOOTER STYLES
     float: right;
     margin-right: 0; }
 
+  /*****************************************************************
+  SHORTCODE
+  ******************************************************************/
+  .skill-container {
+    max-height: 400px;
+    height: 28.5vw;
+    background-size: 100%; }
+    .skill-container .skill-content {
+      bottom: 36px;
+      position: absolute;
+      top: 36px;
+      width: 500px; }
+      .skill-container .skill-content.left {
+        left: 36px; }
+      .skill-container .skill-content.right {
+        right: 36px; }
+
   /*********************
   SIDEBARS & ASIDES
   *********************/
@@ -1681,6 +1729,15 @@ FOOTER STYLES
   /*********************
   FOOTER STYLES
   *********************/
+  .footer {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto; }
+    .footer:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
   /* end .footer-links */ }
 @media only screen and (min-width: 1030px) {
   /******************************************************************

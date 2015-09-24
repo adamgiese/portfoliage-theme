@@ -34,6 +34,38 @@ function skeleton_skill_registration() {
 	); 
 }
 
+//shortcode support
+add_shortcode('get_skills', 'get_skills_registration');
+function get_skills_registration($atts) {
+  $string = '';
+  //$attributes = shortcode_atts( array(), $atts ); //get attributes
+  $args = array (
+    'posts_per_page'      => -1,
+    'post_type'           => 'skeleton_skill'
   );
+  $skills = get_posts($args);
+  global $post;
+  $string .= "<h3 class='skill-title'>Skills</h3>";
+  $i = 0;
+  foreach ($skills as $post) {
+    $i++;
+    if ($i % 2 == 0) {
+      $class = 'right';
+    } else {
+      $class = 'left';
+    }
+    setup_postdata($post);
+    $bg_image_url = '"' . wp_get_attachment_url( get_post_thumbnail_id($post->ID),'full') . '"';
+    $content = get_the_content();
+    $title = get_the_title();
+    $string .= "<div class='skill-container' style='background-image: url($bg_image_url)'>";
+    $string .= "<div class='skill-content $class'>";
+    $string .= "<h4>$title</h4>";
+    $string .= "<div class='description'>$content</div>";
+    $string .= "</div>"; //skill-content
+    $string .= "</div>"; //skill-container
+  }
+  
+  return $string;
 }
 ?>

@@ -16,6 +16,7 @@ $purple-color:      #6151bb;
 $white-color:       white;
 $black-color:       black;
 $gray-color:        #b5b5b5;
+$dark-gray-color:   #3e3e3e;
 
 //brand colors
 $facebook-blue:     #3b5998;
@@ -52,7 +53,7 @@ $sidebar-link-color:             $content-link-color;
 $sidebar-link-color-on-hover:    darken($sidebar-link-color, 10%);
 
 
-$footer-bg-color:               $site-bg-color;
+$footer-bg-color:               $dark-gray-color;
 $footer-border-color:           $site-border-color;
 $footer-text-color:             $site-text-color;
 $footer-link-color:             $site-link-color;
