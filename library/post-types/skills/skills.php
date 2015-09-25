@@ -29,7 +29,7 @@ function skeleton_skill_registration() {
 			'has_archive' => 'skeleton_skill', 
 			'capability_type' => 'post',
 			'hierarchical' => false,
-			'supports' => array( 'title', 'editor', 'thumbnail')
+			'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes')
 		)
 	); 
 }
@@ -41,7 +41,9 @@ function get_skills_registration($atts) {
   //$attributes = shortcode_atts( array(), $atts ); //get attributes
   $args = array (
     'posts_per_page'      => -1,
-    'post_type'           => 'skeleton_skill'
+    'post_type'           => 'skeleton_skill',
+    'orderby'             => 'menu_order',
+    'order'               => 'ASC'
   );
   $skills = get_posts($args);
   global $post;
