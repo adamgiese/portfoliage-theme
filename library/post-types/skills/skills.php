@@ -33,6 +33,16 @@ function skeleton_skill_registration() {
 		)
 	); 
 }
+if (class_exists('MultiPostThumbnails')) {
+  new MultiPostThumbnails(
+    array(
+      'label' => 'Mobile Featured Image',
+      'id' => 'featured-image-mobile',
+      'post_type' => 'skeleton_skill'
+    )
+  );
+}
+
 
 //shortcode support
 add_shortcode('get_skills', 'get_skills_registration');
