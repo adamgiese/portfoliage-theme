@@ -1277,7 +1277,8 @@ SHORTCODE
   color: #b5b5b5; }
 
 .skill-container {
-  position: relative; }
+  position: relative;
+  background-position: 50% 0; }
   .skill-container .skill-content {
     background: black;
     background: rgba(0, 0, 0, 0.7);
