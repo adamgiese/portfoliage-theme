@@ -12,6 +12,7 @@ function launch_skeleton() {
   require_once( 'library/post-types/tools/tools.php' );
   require_once( 'library/post-types/projects/projects.php' );
   require_once( 'library/customizer.php' );
+  require_once( 'library/custom-fields.php' );
   require_once( 'library/sidebars.php' );
   require_once( 'library/comments-layout.php' );
 
