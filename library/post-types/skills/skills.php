@@ -57,7 +57,7 @@ function get_skills_registration($atts) {
   );
   $skills = get_posts($args);
   global $post;
-  $string .= "<h3 class='skill-title'>Skills</h3>";
+  $string .= "<h3 class='shortcode-title'>Skills</h3>";
   $i = 0;
   foreach ($skills as $post) {
     $i++;
