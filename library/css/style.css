@@ -1268,7 +1268,7 @@ TEMPLATES
 /*****************************************************************
 SHORTCODE
 ******************************************************************/
-.skill-title {
+.shortcode-title {
   text-transform: lowercase;
   font-size: 42px;
   font-weight: 700;
@@ -1692,6 +1692,11 @@ FOOTER STYLES
         left: 36px; }
       .skill-container .skill-content.right {
         right: 36px; }
+
+  .tools-container {
+    text-align: center; }
+    .tools-container img {
+      max-width: 25%; }
 
   /*********************
   SIDEBARS & ASIDES
