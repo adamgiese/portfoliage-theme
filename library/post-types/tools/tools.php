@@ -46,7 +46,7 @@ function get_tools_registration($atts) {
   );
   $tools = get_posts($args);
   global $post;
-  $string .= "<h3 class='shortcode-title'>Tools</h3>";
+  $string .= "<h3 class='shortcode-title'>Tools &amp; Languages</h3>";
   $string .= "<div class='tools-container'>";
   foreach ($tools as $post) {
     setup_postdata($post);
