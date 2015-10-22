@@ -1293,6 +1293,10 @@ SHORTCODE
   .skill-container .description {
     color: #b5b5b5; }
 
+.tools-container img {
+  filter: grayscale(0.6);
+  -webkit-filter: grayscale(0.6); }
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/

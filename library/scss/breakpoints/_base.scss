@@ -572,6 +572,12 @@ SHORTCODE
     color: $gray-color;
   }
 }
+.tools-container {
+  img {
+    filter: grayscale(.6);
+    -webkit-filter: grayscale(.6);
+  }
+}
 
 /******************************************************************
 PAGE NAVI STYLES
