@@ -33,4 +33,27 @@ function skeleton_tool_registration() {
 		)
 	); 
 }
+
+//shortcode support
+add_shortcode('get_tools', 'get_tools_registration');
+function get_tools_registration($atts) {
+  $string = '';
+  $args = array (
+    'posts_per_page'      => -1,
+    'post_type'           => 'skeleton_tool',
+    'orderby'             => 'menu_order',
+    'order'               => 'ASC'
+  );
+  $tools = get_posts($args);
+  global $post;
+  $string .= "<h3 class='shortcode-title'>Tools</h3>";
+  $string .= "<div class='tools-container'>";
+  foreach ($tools as $post) {
+    setup_postdata($post);
+    $string .= get_the_post_thumbnail(get_the_ID(),'full');
+  }
+  $string .= "</div>"; //.tools-container
+  wp_reset_query();
+  return $string;
+}
 ?>
