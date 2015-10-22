@@ -78,6 +78,7 @@ function get_skills_registration($atts) {
     $string .= "</div>"; //skill-container
   }
   
+  wp_reset_query();
   return $string;
 }
 ?>
