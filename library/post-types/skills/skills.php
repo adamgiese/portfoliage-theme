@@ -72,6 +72,7 @@ function get_skills_registration($atts) {
     $title = get_the_title();
     $link = get_the_permalink();
     $string .= "<div class='skill-container' style='background-image: url($bg_image_url)'>";
+    $string .= "<a class='skill-link' href='$link' title='$title'></a>";
     $string .= "<div class='skill-content $class'>";
     $string .= "<h4>$title</h4>";
     $string .= "<div class='description'>$content</div>";
