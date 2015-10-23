@@ -572,6 +572,20 @@ SHORTCODE
     color: $gray-color;
   }
 }
+.skill-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+  transition: .5s all;
+
+  &:hover {
+    opacity: .4; 
+  }
+}
 .tools-container {
   img {
     filter: grayscale(.6);

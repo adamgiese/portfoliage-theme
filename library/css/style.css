@@ -1293,6 +1293,18 @@ SHORTCODE
   .skill-container .description {
     color: #b5b5b5; }
 
+.skill-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+  transition: .5s all; }
+  .skill-link:hover {
+    opacity: .4; }
+
 .tools-container img {
   filter: grayscale(0.6);
   -webkit-filter: grayscale(0.6); }
