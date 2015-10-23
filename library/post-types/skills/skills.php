@@ -25,7 +25,7 @@ function skeleton_skill_registration() {
 			'query_var' => true,
 			'menu_position' => 8, 
 			'menu_icon' => 'dashicons-media-text', 
-			'rewrite'	=> array( 'slug' => 'skeleton_skill', 'with_front' => false ), 
+			'rewrite'	=> array( 'slug' => 'skill', 'with_front' => false ), 
 			'has_archive' => 'skeleton_skill', 
 			'capability_type' => 'post',
 			'hierarchical' => false,
