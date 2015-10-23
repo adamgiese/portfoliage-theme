@@ -29,7 +29,7 @@ function skeleton_skill_registration() {
 			'has_archive' => 'skeleton_skill', 
 			'capability_type' => 'post',
 			'hierarchical' => false,
-			'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes')
+			'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'page-attributes')
 		)
 	); 
 }
@@ -68,7 +68,7 @@ function get_skills_registration($atts) {
     }
     setup_postdata($post);
     $bg_image_url = '"' . wp_get_attachment_url( get_post_thumbnail_id($post->ID),'full') . '"';
-    $content = get_the_content();
+    $content = get_the_excerpt();
     $title = get_the_title();
     $string .= "<div class='skill-container' style='background-image: url($bg_image_url)'>";
     $string .= "<div class='skill-content $class'>";
