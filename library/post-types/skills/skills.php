@@ -70,6 +70,7 @@ function get_skills_registration($atts) {
     $bg_image_url = '"' . wp_get_attachment_url( get_post_thumbnail_id($post->ID),'full') . '"';
     $content = get_the_excerpt();
     $title = get_the_title();
+    $link = get_the_permalink();
     $string .= "<div class='skill-container' style='background-image: url($bg_image_url)'>";
     $string .= "<div class='skill-content $class'>";
     $string .= "<h4>$title</h4>";
