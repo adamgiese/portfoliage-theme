@@ -1714,6 +1714,14 @@ FOOTER STYLES
     .tools-container img {
       max-width: 25%; }
 
+  .testimonials-container {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    background: #b5b5b5;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 70%; }
+
   /*********************
   SIDEBARS & ASIDES
   *********************/
