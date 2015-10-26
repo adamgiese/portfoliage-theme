@@ -24,7 +24,7 @@ function skeleton_project_registration() {
 			'show_ui' => true,
 			'query_var' => true,
 			'menu_position' => 8, 
-			'menu_icon' => 'dashicons-admin-projects', 
+			'menu_icon' => 'dashicons-admin-customizer', 
 			'rewrite'	=> array( 'slug' => 'skeleton_project', 'with_front' => false ), 
 			'has_archive' => 'skeleton_project', 
 			'capability_type' => 'post',
